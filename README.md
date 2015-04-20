@@ -4,7 +4,7 @@ A simple TraceListener for use with Elmah.
 
 # To Use
 
-ElmahWriterTraceListener.Register();
+    ElmahWriterTraceListener.Register();
 
 And then
 
@@ -18,6 +18,8 @@ You can also
 
 	Trace.Write("Hello");  // Will work the same as WriteLine
     Trace.WriteLine("World"); 
+
+See http://truenorthit.co.uk/2015/04/17/trace-listener-for-elmah-asp-mvc-exception-logger/ for more details
 
 
 
