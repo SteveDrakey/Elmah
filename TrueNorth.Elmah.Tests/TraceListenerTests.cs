@@ -55,7 +55,7 @@ namespace TrueNorth.Elmah.Tests
             var logs = ErrorLog.Default.GetErrors(0, 10, errors);
 
             Assert.AreEqual(5, logs);
-            Assert.AreEqual("TraceWarning", errors.First().Error.Message);
+            Assert.AreEqual("!WriteLine!", errors.First().Error.Message);
             Assert.AreEqual("ErrorMessage 1,2,3", errors.Last().Error.Message);
 
         }
