@@ -2,6 +2,9 @@
 using System.Text;
 using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using TrueNorth.Elmah.TraceListener;
+using Elmah;
+using System.Linq;
 
 namespace TrueNorth.Elmah.Tests
 {
@@ -36,34 +39,25 @@ namespace TrueNorth.Elmah.Tests
             }
         }
 
-        #region Additional test attributes
-        //
-        // You can use the following additional attributes as you write your tests:
-        //
-        // Use ClassInitialize to run code before running the first test in the class
-        // [ClassInitialize()]
-        // public static void MyClassInitialize(TestContext testContext) { }
-        //
-        // Use ClassCleanup to run code after all tests in a class have run
-        // [ClassCleanup()]
-        // public static void MyClassCleanup() { }
-        //
-        // Use TestInitialize to run code before running each test 
-        // [TestInitialize()]
-        // public void MyTestInitialize() { }
-        //
-        // Use TestCleanup to run code after each test has run
-        // [TestCleanup()]
-        // public void MyTestCleanup() { }
-        //
-        #endregion
-
         [TestMethod]
-        public void TestMethod1()
+        public void RegisterAndTrace()
         {
-            //
-            // TODO: Add test logic here
-            //
+            ElmahWriterTraceListener.Register();
+
+            System.Diagnostics.Trace.TraceError("ErrorMessage {0},{1},{2}",1,2,3);
+            System.Diagnostics.Trace.TraceInformation("TraceInfomation");
+            System.Diagnostics.Trace.TraceWarning("TraceWarning");
+
+            System.Diagnostics.Trace.Write("!Write!"); 
+            System.Diagnostics.Trace.WriteLine("!WriteLine!"); 
+
+            List<ErrorLogEntry> errors = new List<ErrorLogEntry>();
+            var logs = ErrorLog.Default.GetErrors(0, 10, errors);
+
+            Assert.AreEqual(5, logs);
+            Assert.AreEqual("TraceWarning", errors.First().Error.Message);
+            Assert.AreEqual("ErrorMessage 1,2,3", errors.Last().Error.Message);
+
         }
     }
 }
