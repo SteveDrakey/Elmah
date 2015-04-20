@@ -1,4 +1,5 @@
-# Elmah Tracer
+# Elmah Tracer [![Build status](https://ci.appveyor.com/api/projects/status/a4pyokl9b3mq0v83?svg=true)](https://ci.appveyor.com/project/SteveDrakey/elmah)
+
 
 A simple TraceListener for use with Elmah.
 
