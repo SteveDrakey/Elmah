@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrueNorth.Elmah", "TrueNorth.Elmah\TrueNorth.Elmah.csproj", "{201E69FD-08A3-4889-9F3F-4000D23ECFCC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrueNorth.Elmah.Tests", "TrueNorth.Elmah.Tests\TrueNorth.Elmah.Tests.csproj", "{0F3C7186-C814-4B1E-A356-35DB0E648DBA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{201E69FD-08A3-4889-9F3F-4000D23ECFCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{201E69FD-08A3-4889-9F3F-4000D23ECFCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{201E69FD-08A3-4889-9F3F-4000D23ECFCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{201E69FD-08A3-4889-9F3F-4000D23ECFCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F3C7186-C814-4B1E-A356-35DB0E648DBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F3C7186-C814-4B1E-A356-35DB0E648DBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F3C7186-C814-4B1E-A356-35DB0E648DBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F3C7186-C814-4B1E-A356-35DB0E648DBA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
