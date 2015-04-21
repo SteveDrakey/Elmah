@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>TrueNorth.Elmah</id>
-    <version>1.0.0.0</version>
+    <version>$version$</version>
     <title>TrueNorth.Elmah (TraceListener)</title>
     <authors>TrueNorth IT</authors>
     <owners>TrueNorth IT</owners>
