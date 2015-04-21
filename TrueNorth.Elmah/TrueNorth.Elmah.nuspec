@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>$id$</id>
+    <id>$id</id>
     <version>$version$</version>
     <title>TrueNorth.Elmah (TraceListener)</title>
     <authors>TrueNorth IT</authors>
@@ -13,9 +13,10 @@
     <releaseNotes>Initial Release of our Elmah extensions, first release includes a trace listener see https://github.com/TrueNorthIT/Elmah</releaseNotes>
     <copyright>Copyright 2015</copyright>
     <tags>Elmah TraceListener Loging</tags>
+    <dependencies>
+      <dependency id="elmah" version="1.2.2" />
+      <dependency id="elmah.corelibrary" version="1.2.2" />
+    </dependencies>
+
   </metadata>
-  <dependencies>
-    <dependency id="elmah" version="1.2.2" />
-    <dependency id="elmah.corelibrary" version="1.2.2" />
-  </dependencies>
 </package>
