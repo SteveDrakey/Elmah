@@ -3,11 +3,17 @@
 
 A simple TraceListener for use with Elmah.
 
-# To Use
+## Install
+
+    Install-Package TrueNorth.Elmah 
+
+## Usage
+
+### Register (or add to .config)
 
     ElmahWriterTraceListener.Register();
 
-And then
+### And then
 
     using System.Diagnostics
 
@@ -15,9 +21,9 @@ And then
     Trace.TraceInformation("Or maybe some info");
     Trace.TraceWarning("Or a warning");
 
-You can also
+### You can also
 
-	Trace.Write("Hello");  // Will work the same as WriteLine
+    Trace.Write("Hello");  // Will work the same as WriteLine
     Trace.WriteLine("World"); 
 
 See http://truenorthit.co.uk/2015/04/17/trace-listener-for-elmah-asp-mvc-exception-logger/ for more details
