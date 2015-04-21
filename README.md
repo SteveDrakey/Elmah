@@ -3,17 +3,15 @@
 
 A simple TraceListener for use with Elmah.
 
-## Install
+# Install
 
     Install-Package TrueNorth.Elmah 
 
-## Usage
-
-### Register (or add to .config)
+# To Use
 
     ElmahWriterTraceListener.Register();
 
-### And then
+# And then
 
     using System.Diagnostics
 
@@ -21,7 +19,7 @@ A simple TraceListener for use with Elmah.
     Trace.TraceInformation("Or maybe some info");
     Trace.TraceWarning("Or a warning");
 
-### You can also
+# You can also
 
     Trace.Write("Hello");  // Will work the same as WriteLine
     Trace.WriteLine("World"); 
